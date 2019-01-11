@@ -1,0 +1,172 @@
+.cr-page-title{
+  display: none;
+}
+
+.cr-headers-container{
+    color: $white;
+
+    .cr-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cr-header{
+        &--sub{
+            background-color: $subheader;
+            font-size: 14px;
+            padding: 11px 0;
+
+            .cr-agency-info{
+                display: flex;
+                align-items: center;
+                
+                .cr-tel{
+                    color: $white;
+                    margin-left: 10px;
+                    vertical-align: middle;
+
+                    &:before{
+                        content: "";
+                        background: url(../images/icon_phone.svg) no-repeat;
+                        width: 10px;
+                        height: 16px;
+                        display: inline-block;
+                        background-size: contain;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .cr-account-section{
+                display: flex;
+                align-items: center;
+
+                .cr-account-item{
+                    margin-left: 50px;
+                }
+
+                .cr-account-languages{
+                    display: flex;
+                    height: auto;
+                    
+                    .cr-language{
+                        font-size: 10px;
+                        background-color: $white;
+                        border: 3px solid $subheader;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 24px;
+                        text-align: center;
+                        margin-left: -10px;
+
+                        a{
+                            color: $text;
+                        }
+                    }
+                }
+
+                .cr-shops{
+                    display: flex;
+                    align-items: center;
+
+                    &:after{
+                        content: "";
+                        background: url(../images/icon_arrow.svg) no-repeat;
+                        width: 10px;
+                        height: 6px;
+                        display: inline-block;
+                        background-size: contain;
+                        margin-left: 10px;
+                    }
+                }
+
+                .cr-account-link{
+                    color: $white;
+                    &:after{
+                        content: "";
+                        background: url(../images/icon_account.svg) no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        background-size: contain;
+                        margin-left: 10px;
+                    }
+                }
+
+                .cr-account-logout{
+                    color: $white;
+                    &:after{
+                        content: "";
+                        background: url(../images/icon_connect.svg) no-repeat;
+                        width: 15px;
+                        height: 16px;
+                        display: inline-block;
+                        background-size: contain;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        &--main{
+            background-color: $text;
+            font-size: 16px;
+            padding: 20px 0;
+
+            .cr-menu-container{
+                display: flex;
+                align-items: center;
+            }
+
+            .cr-logo img{
+              width: 120px;
+              height: 70px;
+              object-fit: cover;
+              margin-right: 50px;
+            }
+
+            .cr-menu{
+                &--main{
+
+                  .cr-menu-item{
+                    margin-right: 50px;
+                  }
+                }
+
+                &--shop{
+
+                  .cr-menu-item{
+                    margin-left: 50px;
+                  }
+                }
+
+                &-content{
+                    display: flex;
+                }
+
+            }
+        }
+        
+        .cr-menu-item a {
+          color: $white;
+        }
+    }
+}
+
+form{
+    input[type="text"]{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    input[type="submit"]{
+        background-color: transparent;
+        border: none;
+        background-image: url(../images/icon_search.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: transparent;
+    }
+}

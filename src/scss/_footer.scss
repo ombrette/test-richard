@@ -1,0 +1,103 @@
+.cr-footer{
+    color: $white;
+}
+
+.cr-footer-main-section{
+    background-color: $text;
+    padding: 120px 0;
+
+    .cr-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cr-footer-menu{
+        .cr-menu{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 600px;
+        }
+
+        .cr-menu-item{
+            font-size: 22px;
+            margin-bottom: 50px;
+            margin-right: 160px;
+
+            a{
+                color: $white;
+            }
+        }
+
+        .cr-submenu{
+            margin-top: 20px;
+            .cr-menu-item{
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .cr-contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        font-size: 22px;
+        font-weight: 300;
+
+        span{
+            font-size: 18px;
+        }
+
+        a{
+            color: $white;
+        }
+    }
+}
+
+.cr-footer-sub-section{
+    background-color: $subheader;
+
+    .cr-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cr-left-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 750px;
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .cr-section-item{
+        width: 50%;
+        color: $white;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .cr-url{
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 74px;
+    }
+
+    .cr-legal-menu{
+        ul{
+            display: flex;
+        }
+        li{
+            border-right: 1px solid white;
+            padding: 0 5px;
+
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+    
+}

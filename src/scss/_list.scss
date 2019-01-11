@@ -1,0 +1,297 @@
+.cr-filters{
+    .cr-container{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+    }
+}
+
+.cr-main-content{
+    background-color: $light-grey;
+
+    .cr-container{
+        max-width: 1240px;
+    }
+}
+
+.cr-product-list{
+    .cr-product-section{
+        margin-bottom: 75px;
+        display: inline-block;
+    }
+
+    .cr-section-title{
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 5px;
+    }
+
+    .cr-section-list{
+        display: flex;
+        flex-wrap: wrap;
+
+        .cr-product{
+            width: calc((100% - 80px) / 3);
+            height: 580px;
+            background-color: $white;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-right: 40px;
+            padding: 20px 0 30px;
+
+            &:nth-child(3n){
+              margin-right: 0;
+            }
+
+            &-image{
+                height: 350px;
+            }
+
+            &-title{
+                font-size: 20px;
+                font-weight: 300;
+                height: 50px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .cr-product-details{
+                margin-bottom: 28px;
+                font-size: 14px;
+            }
+
+            .cr-detail-weight{
+                margin-right: 20px;
+                vertical-align: middle;
+                &:before{
+                    content: "";
+                    background: url(../images/spoon.svg) no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background-size: contain;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+
+            .cr-detail-origin{
+                margin-left: 20px;
+            }
+
+            &-purchase{
+                display: flex;
+                justify-content: center;
+            }
+
+            &-quantity{
+                padding-right: 20px;
+                font-size: 12px;
+
+                .cr-quantity{
+                    color: $middle-grey;
+
+                    &--active{
+                        background-color: $text;
+                        color: $white;
+                        padding: 2px;
+                    }
+                }
+                
+                span{
+                    display: block;
+                    font-weight: 300;
+                    margin-top: 5px;
+                }
+            }
+
+            &-price{
+                border-left: 1px solid $text;
+                height: 40px;
+                padding-left: 20px;
+
+                .cr-price{
+                    font-weight: 700;
+                    font-size: 14px;
+
+                    span{
+                        font-weight: 300;
+                        font-size: 12px;
+                    }
+                }
+
+                .cr-add-to-cart{
+                    font-size: 18px;
+                    text-decoration: underline;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.cr-recipes-advices{
+    .cr-container{
+        max-width: 1240px;
+    }
+
+    .cr-section-title{
+        font-size: 30px;
+        text-align: center;
+        margin: 80px 0;
+    }
+
+    .cr-recipes-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cr-recipe{
+        width: calc(50% - 40px);
+        margin-right: 80px;
+        margin-bottom: 50px;
+
+        &:nth-child(even){
+            margin-right: 0;
+        }
+
+        &--video{
+            .cr-image-block{
+                &:before{
+                    content: "";
+                    background: url(../images/play-button.svg) no-repeat;
+                    width: 130px;
+                    height: 130px;
+                    display: inline-block;
+                    background-size: contain;
+                    vertical-align: middle;
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &--pdf{
+            .cr-image-block{
+                &:before{
+                    content: "";
+                    background: url(../images/pdf.svg) no-repeat;
+                    width: 130px;
+                    height: 130px;
+                    display: inline-block;
+                    background-size: contain;
+                    vertical-align: middle;
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .cr-image-block{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        &-image{
+            width: 100%;
+            height: 17vw;
+            object-fit: cover;
+        }
+
+        &-title{
+            margin: 20px 0;
+            font-size: 30px;
+            max-width: 80%;
+        }
+
+        &-desc{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        &-link{
+            font-size: 18px;
+            font-weight: 300;
+            border-left: 1px solid $text;
+            padding-left: 20px;
+            color: $text;
+        }
+    }
+}
+
+.cr-services{
+    background-color: $light-grey;
+
+    .cr-services-list{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 40px;
+    }
+
+    .cr-service{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 60px;
+        position: relative;
+
+        &:before{
+            content: "";
+            width: 82px;
+            height: 64px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+        }
+
+        &:after{
+            content: "";
+            width: 1px;
+            height: 40px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: $middle-grey;
+            position: absolute;
+            right: 0;
+        }
+
+        &--time{
+            &:before{
+                background-image: url(../images/time.svg);
+            }
+        }
+        &--delivery{
+            &:before{
+                background-image: url(../images/delivery-truck.svg);
+            }
+        }
+        &--quality{
+            &:before{
+                background-image: url(../images/icon_quality.svg);
+            }
+        }
+        &--catalogue{
+            &:before{
+                background-image: url(../images/wreath.svg);
+            }
+
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
